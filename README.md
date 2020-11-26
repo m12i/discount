@@ -147,7 +147,7 @@ As shown in the following diagram a the server is behind a load-balancer (Nginx)
 run in multiple replicas to support scaling horizontally. Redis' in memory data store 
 is used to store the data in a way that it's shared between the replications of the API.
  
- ![Diagram](https://github.com/m12i/discount/blob/main/doc/diagram.png?raw=true)
+ ![Diagram](https://github.com/m12i/discount/blob/master/doc/diagram.png?raw=true)
 
 ### Assumptions and improvements
  1. The current implementation uses an in-memory database. The design
