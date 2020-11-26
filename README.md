@@ -129,7 +129,7 @@ To do so, send a `POST` request to `/discount/dsc-_t7rAPfmQbCXyPytq77a6A/grant` 
 with
 the data in the body as shown below: 
 ```bash 
-curl -XPOST 'http://localhost/discount/dsc-SjY37cpcTeW-sYh2yM7GJA/grant'  \
+curl -XPOST 'http://localhost/discount/dsc-_t7rAPfmQbCXyPytq77a6A/grant'  \
     -H 'Content-Type: application/json' \
     -d '{"user_id": "User 1"}'
 ```
@@ -137,15 +137,8 @@ curl -XPOST 'http://localhost/discount/dsc-SjY37cpcTeW-sYh2yM7GJA/grant'  \
 Response expected:
 ```json
 {
-  "discounts": [
-    {
-      "brand_id": "IKEA", 
-      "created_at": "2020-11-26T10:27:57.202420Z", 
-      "discount_code": "Christmas 2020 discount", 
-      "id": "dsc-_t7rAPfmQbCXyPytq77a6A", 
-      "total_count": 100
-    }
-  ]
+  "discount_id": "dsc-_t7rAPfmQbCXyPytq77a6A", 
+  "granted": true
 }
 ```
 
