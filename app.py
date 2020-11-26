@@ -1,9 +1,9 @@
 import json
 
-from flask import Flask, request, abort, jsonify, make_response
+from flask import Flask, request, jsonify, make_response
 
-from model import Discount
-from redis_storage import init_redis_storage
+from src.model import Discount
+from src.redis_storage import init_redis_storage
 
 app = Flask(__name__)
 

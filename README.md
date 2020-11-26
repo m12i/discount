@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 Run tests:
 ```bash
-python -m unittest test_storage.py
+nosetests test/*
 ```
 
 ## How to run
@@ -161,6 +161,5 @@ is used to store the data in a way that it's shared between the replications of 
  
  ### ToDos
  1. Integration test
- 2. Move the python source to `src` for better code organization.
- 3. Add more error handling and test for edge cases of data and possible errors when dealing with Redis
+ 2. Add more error handling and test for edge cases of data and possible errors when dealing with Redis
    

@@ -1,10 +1,10 @@
-from typing import Iterator, List
+from typing import List
 from datetime import datetime
 
 import redis
 
-from model import Discount
-from utils import generate_new_uuid
+from src.model import Discount
+from src.utils import generate_new_uuid
 import os
 
 DISCOUNT_KEY_PREFIX = 'dsc-'

@@ -1,8 +1,8 @@
 from unittest import TestCase
 import fakeredis
 
-from model import Discount
-from redis_storage import RedisStorage, DISCOUNT_KEY_PREFIX
+from src.model import Discount
+from src.redis_storage import RedisStorage, DISCOUNT_KEY_PREFIX
 
 mock_redis = fakeredis.FakeStrictRedis()
 
