@@ -18,7 +18,8 @@ def healthy():
 
 @app.route('/discount', methods=['POST'])
 def create_discount():
-    discount = Discount.from_json_str(request.data.decode('utf-8'))
+    """Creates one or more discounts for a brand."""
+    discount = Discount.from_json_str(request.data)
     stored_discount = storage.insert(discount)
     return jsonify(stored_discount.__dict__)
 
